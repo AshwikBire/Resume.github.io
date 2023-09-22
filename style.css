@@ -1,0 +1,241 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background image to the entire body */
+body {
+    background-image: url('New1.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+/* Style the header section */
+header {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('your-background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    position: relative;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white; /* Blue color for the header title */
+}
+
+/* Style the header subtitle */
+header p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white; /* Lighter blue color for the header subtitle */
+}
+
+/* Style a call-to-action button */
+.header-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header-button:hover {
+    background-color: #0056b3;
+}
+
+/* Center the button horizontally */
+.header-button-center {
+    display: block;
+    margin: 20px auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the header elements */
+header h1,
+header p,
+.header-button {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background for the navbar */
+    border-bottom: 2px solid #007BFF; /* Blue bottom border for the navbar */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Add an underline effect on hover */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007BFF; /* Blue underline color */
+    transform: scaleX(0);
+    transform-origin: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Change text color on hover to blue */
+}
+
+/* Expand the underline on hover */
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Style the sections */
+section {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background for sections */
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #007BFF; /* Blue text color for section headings */
+}
+
+/* Style links in the sections */
+section a {
+    color: #008BFF; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section a:hover {
+    color: #ffffff; /* Change text color on hover to white */
+    text-decoration: underline;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background for the footer */
+}
+
+footer p {
+    color: #008BFF; /* Blue text color for footer */
+}
+
+
+/* Add hover animation for section backgrounds */
+section:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    transform: scale(1.02); /* Slight scale increase on hover */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Add hover animation for links */
+section a:hover {
+    color: #ffffff; /* Change text color to white on hover */
+    text-decoration: none;
+    transform: translateY(-3px); /* Move links up slightly on hover */
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Default styles for all screens */
+/* Add your default CSS here */
+
+/* Responsive styles for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    /* Adjust header padding for mobile */
+    header {
+        padding: 60px 0;
+    }
+
+    /* Decrease header font size for mobile */
+    h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    /* Decrease header subtitle font size for mobile */
+    header p {
+        font-size: 16px;
+    }
+
+    /* Increase button padding for mobile */
+    .header-button {
+        padding: 8px 16px;
+    }
+
+    /* Adjust section padding for mobile */
+    section {
+        padding: 20px;
+    }
+}
+
+/* Responsive styles for screens with a minimum width of 769px (typical for laptops) */
+@media (min-width: 769px) {
+    /* Reset mobile styles for header padding */
+    header {
+        padding: 100px 0;
+    }
+
+    /* Reset mobile styles for header font size */
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    /* Reset mobile styles for header subtitle font size */
+    header p {
+        font-size: 18px;
+    }
+
+    /* Reset mobile styles for button padding */
+    .header-button {
+        padding: 10px 20px;
+    }
+
+    /* Reset mobile styles for section padding */
+    section {
+        padding: 30px;
+    }
+}
