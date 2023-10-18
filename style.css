@@ -130,18 +130,18 @@ header p,
 /* Style the sections */
 section {
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background for sections */
+    background-color: rgba(0, 0, 0, 0.4); /* Dark transparent background for sections */
     margin-bottom: 20px;
     border-radius: 10px;
 }
 
 section h2 {
-    color: #007BFF; /* Blue text color for section headings */
+    color: #FFF; /* Blue text color for section headings */
 }
 
 /* Style links in the sections */
 section a {
-    color: #008BFF; /* Blue color for links */
+    color: #FFF; /* Blue color for links */
     text-decoration: none;
     transition: color 0.3s;
 }
