@@ -110,6 +110,28 @@ header p,
     display: none;
     position: absolute;
     background-color: #333;
+    color: #fff;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-nav li:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+}
+
+.dropdown-nav a:hover {
+    color: #ff5733;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
     padding: 10px;
     top: 100%;
     left: 0;
