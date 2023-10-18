@@ -83,49 +83,48 @@ header p,
 }
 
 /* Style the navigation menu */
-nav ul {
-    list-style-type: none;
+/* Navbar with Dropdown Menu */
+.dropdown-nav {
+    background-color: #333;
+    color: #fff;
+}
+
+.dropdown-nav ul {
+    list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background for the navbar */
-    border-bottom: 2px solid #007BFF; /* Blue bottom border for the navbar */
 }
 
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 15px 20px;
-    font-size: 18px;
+.dropdown-nav li {
+    display: inline;
+    margin-right: 20px;
     position: relative;
+}
+
+.dropdown-nav a {
+    text-decoration: none;
+    color: #fff;
     transition: color 0.3s;
 }
 
-/* Add an underline effect on hover */
-nav ul li a::before {
-    content: '';
+.dropdown-menu {
+    display: none;
     position: absolute;
-    bottom: -5px;
+    background-color: #333;
+    padding: 10px;
+    top: 100%;
     left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #007BFF; /* Blue underline color */
-    transform: scaleX(0);
-    transform-origin: 100%;
-    transition: transform 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-    color: #007BFF; /* Change text color on hover to blue */
+.dropdown-menu li {
+    margin: 5px 0;
 }
 
-/* Expand the underline on hover */
-nav ul li a:hover::before {
-    transform: scaleX(1);
+.dropdown-nav li:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+}
+
+.dropdown-nav a:hover {
+    color: #ff5733;
 }
 
 /* Style the sections */
