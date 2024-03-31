@@ -6,7 +6,7 @@ body, h1, h2, p {
 
 /* Apply a background image to the entire body */
 body {
-    background-image: url('New1.jpeg'); /* Replace with your image path */
+    background-image: url('New1.jpg'); /* Replace with your image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
